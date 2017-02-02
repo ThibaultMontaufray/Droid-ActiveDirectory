@@ -1,5 +1,5 @@
 language: csharp
-solution: Droid_ActiveDirectory.sln
+solution: Project\Droid_ActiveDirectory.sln
 mono: latest
 notifications:
   email: false
