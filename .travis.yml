@@ -1,5 +1,15 @@
 language: csharp
 solution: Project/Droid_ActiveDirectory.sln
 mono: latest
+dist: trusty
 notifications:
   email: false
+
+addons:
+  sonarcloud:
+    organization: http://servodroid.fr:9000 # the key of the org you chose at step #3
+    token:
+      secure: jesuisunemouette # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
